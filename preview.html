@@ -5,8 +5,199 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Rough Seas for Staten Islanders</title>
-	<link rel="stylesheet" href="css/preview.css">
 
+<style>
+/*! Fonts */
+
+@font-face {
+    font-family: 'tiempos_headlineblack';
+    src: url('tiempos_headline-black-webfont.woff2') format('woff2'),
+         url('css/tiempos_headline-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+  }
+  
+  @font-face {
+    font-family: 'benton_sansregular';
+    src: url('bentonsans-regular_sot-webfont.woff2') format('woff2'),
+         url('css/bentonsans-regular_sot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+  }
+
+  /*! Font styles */
+  h1 {
+    font-family: 'tiempos_headlineblack', serif;
+    font-size: calc(56px + 6 * ((100vw - 320px) / 680));
+    color: black;
+    }
+
+  .label {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase; 
+    padding-bottom: 2%;
+    color: #294d58;
+  }
+b {
+    font-family: 'benton_sansbold', sans-serif;
+  }
+
+.subhead {
+    font-family: 'tiempos_headlineblack', serif;
+    font-size: 26px;
+    line-height: 34px;
+    padding-right: 32%;
+    color: black;
+}
+subhead2 {
+  color: #294d58;
+}
+p {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    color: black;
+    }
+
+  .headSea {
+    width: 100vw; 
+    height: 66vh;
+    margin: 0 auto;
+    float: left;
+    padding-top: 50px;
+    padding-left: 10%;
+    text-align: left;
+    background-image: linear-gradient(180deg, #827777 -180%, #ffffff 100%);
+  }
+
+  .ferryWrap {
+    position: relative;
+	  margin: 0 auto;
+    width: 100%;
+	  float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .ferry {
+	margin: 0 auto;
+    max-width: 400px;
+    width: 90%;
+	float: left;
+    position: relative;top: 0px; left: 8%;
+    animation: rotation 4s linear infinite;
+    opacity: 0.8;
+  }
+
+  .line{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .line-1{
+    opacity: 0.5;
+    position: relative;
+  }
+  .line-2{
+    opacity: 0.7;
+  }
+  .line-3{
+    opacity: 0.7;
+  }
+  .line-4{
+    opacity: 1;
+  }
+
+  .wave{
+    position: relative;
+    left: 0;
+    width: 200%;
+    height: 10%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 top;
+  }
+  .wave1{
+    background-size: 100% 80px;
+      animation-name: animate;
+      animation-duration: 14s;
+    }
+  
+  .wave2{
+    background-size: 100% 100px;
+    animation: animate 12s linear infinite;
+  }
+  .wave3{
+    background-size: 100% 80px;
+    animation: animate 18s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100vw;
+    }
+    }
+
+     @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(1deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        75% {
+          transform: rotate(-1deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+  
+a:link, a:visited {
+        background-color: transparent;
+        color: #294d58;
+        font-family: 'benton_sansbold', sans-serif;
+        font-size: 16px;
+        padding: 14px 25px;
+        margin-top: 30px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #294d58;
+      }
+      
+      a:hover, a:active {
+        color: white;
+        background-color: #294d58;
+        font-family: 'benton_sansbold', sans-serif;
+      } 
+
+
+  
+  body {
+    background-color: #839da5;
+    background-image: linear-gradient(0deg, #839da5 10%, #294d58 200%);
+    background-repeat: no-repeat;
+    height: 100%;
+    bottom: 0;
+    margin: 0;
+  }
+
+
+
+
+</style>
     
 </head>
 <body>
@@ -29,7 +220,7 @@
 
             <a href="index.html" target="_blank">Click here</a>
 
-            <div class="city"></div>
+
 
         </div>
     </div>
@@ -39,23 +230,23 @@
 
  
     <div class="line line-1">
-        <div class="wave wave1" style="background-image: url(images/1.png)"></div>
+        <div class="wave wave1" style="background-image: url(https://www.silive.com//resizer/4aTYQjGZSc1NHmOd655_gT-bjmQ=/arc-anglerfish-arc2-prod-advancelocal/public/PDGRUIZ6UZHU7N6QOW44AORFC4.png)"></div>
     </div>
 
     <div class="line line-2">
-        <div class="wave wave2" style="background-image: url(images/2.png)"></div>
+        <div class="wave wave2" style="background-image: url(https://www.silive.com//resizer/WTdLTTZ7KtGm6pWuPkqJCKBmoME=/arc-anglerfish-arc2-prod-advancelocal/public/FGM4VWOZ4ZDQBHATWKHY646CUA.png)"></div>
     </div>
 
     <div class="line line-3">
-        <div class="wave wave2" style="background-image: url(images/3.png)"></div>
+        <div class="wave wave2" style="background-image: url(https://www.silive.com//resizer/Z6zNrTu4VjDvB_CnPEQDHsvuVZM=/arc-anglerfish-arc2-prod-advancelocal/public/AXIUZLHX6NBYNEUHOWQWGZDZXI.png)"></div>
     </div>
 
     <div class="line line-4">
-        <div class="wave wave3" style="background-image: url(images/1.png)"></div>
+        <div class="wave wave3" style="background-image: url(https://www.silive.com/resizer/4aTYQjGZSc1NHmOd655_gT-bjmQ=/arc-anglerfish-arc2-prod-advancelocal/public/PDGRUIZ6UZHU7N6QOW44AORFC4.png)"></div>
     </div>
 
     <div class="ferryWrap">
-        <img class="ferry" src="images/Better Ferry Front.png" ></div>
+        <img class="ferry" src="https://www.silive.com/resizer/N05BgcDSgUjgwJk-_EMYNZKPXE0=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/II7CUMXHBNG2NPX5NXH2II6XAU.png" ></div>
     </div>
 
 
