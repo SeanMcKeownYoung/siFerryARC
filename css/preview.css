@@ -1,0 +1,189 @@
+/*! Fonts */
+
+@font-face {
+    font-family: 'tiempos_headlineblack';
+    src: url('tiempos_headline-black-webfont.woff2') format('woff2'),
+         url('css/tiempos_headline-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+  }
+  
+  @font-face {
+    font-family: 'benton_sansregular';
+    src: url('bentonsans-regular_sot-webfont.woff2') format('woff2'),
+         url('css/bentonsans-regular_sot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+  }
+
+  /*! Font styles */
+  h1 {
+    font-family: 'tiempos_headlineblack', serif;
+    font-size: calc(56px + 6 * ((100vw - 320px) / 680));
+    color: black;
+    }
+
+  .label {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase; 
+    padding-bottom: 2%;
+    color: #294d58;
+  }
+b {
+    font-family: 'benton_sansbold', sans-serif;
+  }
+
+.subhead {
+    font-family: 'tiempos_headlineblack', serif;
+    font-size: 26px;
+    line-height: 34px;
+    padding-right: 32%;
+    color: black;
+}
+subhead2 {
+  color: #294d58;
+  text-wrap: balanced;
+}
+p {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    color: black;
+    }
+
+  .headSea {
+    width: 100vw; 
+    height: 66vh;
+	margin: 0 auto;
+	float: left;
+    padding-top: 50px;
+    padding-left: 10%;
+    text-align: left;
+    background-color: #ffffff;
+  }
+
+  .ferryWrap {
+    position: relative;
+	margin: 0 auto;
+    width: 100%;
+	float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .ferry {
+	margin: 0 auto;
+    max-width: 400px;
+    width: 90%;
+	float: left;
+    position: relative;top: 0px; left: 8%;
+    animation: rotation 4s linear infinite;
+  }
+
+  .line{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .line-1{
+    opacity: 0.5;
+    position: relative;
+  }
+  .line-2{
+    opacity: 0.7;
+  }
+  .line-3{
+    opacity: 0.7;
+  }
+  .line-4{
+    opacity: 1;
+  }
+
+  .wave{
+    position: relative;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 top;
+  }
+  .wave1{
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+      animation-name: animate;
+      animation-duration: 4s;
+    }
+  
+  .wave2{
+    -webkit-background-size: 50% 100px;
+    background-size: 50% 100px;
+    animation: animate 12s linear infinite;
+  }
+  .wave3{
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 100vw;
+    }
+    }
+
+     @-webkit-keyframes rotation {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        25% {
+          -webkit-transform: rotate(1deg);
+        }
+        50% {
+          -webkit-transform: rotate(0deg);
+        }
+        75% {
+          -webkit-transform: rotate(-1deg);
+        }
+        100% {
+          -webkit-transform: rotate(0deg);
+        }
+      }
+  
+a:link, a:visited {
+        background-color: transparent;
+        color: #294d58;
+        font-family: 'benton_sansbold', sans-serif;
+        font-size: 16px;
+        padding: 14px 25px;
+        margin-top: 30px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #294d58;
+      }
+      
+      a:hover, a:active {
+        color: white;
+        background-color: #294d58;
+        font-family: 'benton_sansbold', sans-serif;
+      } 
+
+
+  
+  body {
+    background-color: #294d58;
+    background-image: linear-gradient(175deg, #294d58 40%, #839da5 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 0px;
+  }
+

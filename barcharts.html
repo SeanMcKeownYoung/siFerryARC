@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @font-face {
+    font-family: 'benton_sansregular';
+    src: url('css/bentonsans-regular_sot-webfont.woff2') format('woff2'),
+         url('css/bentonsans-regular_sot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+  }
+  @font-face {
+    font-family: 'benton_sansbold';
+    src: url('css/bentonsans-bold_sot-webfont.woff2') format('woff2'),
+         url('css/bentonsans-bold_sot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+  }
+
+  p {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+  }
+
+  p2 {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    color: rgb(0, 0, 0);
+  }
+
+  h {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ffffff00;
+}
+.container2 {
+  width: 80%;
+  max-width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #ffffff00;
+}
+.credit {
+  width: 80%;
+  padding-top: 40px;
+  background-color: #ffffff00;
+  font-family: 'benton_sansregular', sans-serif;
+    font-size: 12px;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-family: 'benton_sansbold', sans-serif;
+  color: white;
+}
+
+.figure1 {width: 90%; background-color: #839da5; animation: myAnim 2s ease 0s 1 normal forwards;}
+.figure2 {width: 80%; background-color: #839da5; animation: myAnim 2s ease 0s 1 normal forwards;}
+.figure3 {width: 65%; background-color: #839da5; animation: myAnim 2s ease 0s 1 normal forwards;}
+.figure4 {width: 60%; background-color: #839da5; animation: myAnim 2s ease 0s 1 normal forwards;}
+
+@keyframes myAnim {
+	0% {
+		transform: scaleX(0);
+		transform-origin: 0% 0%;
+	}
+
+	100% {
+		transform: scaleX(1);
+		transform-origin: 0% 0%;
+	}
+}
+
+</style>
+</head>
+<body>
+
+<h><b>Title: </b>title title title</h>
+<div class="container2">
+<p2> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p2></div>
+
+<p>Figure 1</p>
+<div class="container">
+  <div class="skills figure1">90%</div>
+</div>
+
+<p>Figure 2</p>
+<div class="container">
+  <div class="skills figure2">40%</div>
+</div>
+
+<p>Figure 3</p>
+<div class="container">
+  <div class="skills figure3">65%</div>
+</div>
+
+<p>Figure 4</p>
+<div class="container">
+  <div class="skills figure4">60%</div>
+</div>
+
+<div class="credit">sources: xxxx</div>
+
+</body>
+</html>
