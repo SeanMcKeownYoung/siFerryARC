@@ -12,11 +12,21 @@
   /*! Font styles */
 .head {
     font-family: 'benton_sansregular', sans-serif;
-    font-size: calc(36px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(76px + 6 * ((100vw - 320px) / 680));
     color: #ffffff;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 80px;
     }
+    @media (max-width: 800px) {
+        .head {
+    font-family: 'benton_sansregular', sans-serif;
+    font-size: calc(46px + 6 * ((100vw - 320px) / 680));
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    }
+    }
+
 
 .label {
     font-family: 'benton_sansregular', sans-serif;
@@ -31,9 +41,17 @@ b {
 
 .subhead {
     font-family: 'benton_sansregular', sans-serif;
+    font-size: 35px;
+    line-height: 46px;
+    color: #ffffff;
+}
+@media (max-width: 800px) {
+    .subhead {
+    font-family: 'benton_sansregular', sans-serif;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
+}
 }
 
 
@@ -178,12 +196,13 @@ a:link, a:visited {
         background-color: transparent;
         color: #ffffff;
         font-family: 'benton_sansbold', sans-serif;
-        font-size: 20px;
+        font-size: 36px;
         padding: 14px 25px;
         margin-top: 30px;
         text-align: left;
         text-decoration: none;
         display: inline-block;
+        width: 700px;
         border: 4px solid white;
         animation: introButton 1s ease 0s 1 normal forwards, glow 3s ease 0s 1 normal forwards;
       }
@@ -194,6 +213,36 @@ a:link, a:visited {
         font-family: 'benton_sansbold', sans-serif;
         animation: permaGlow 1s ease 0s 1 normal forwards;
       } 
+    
+      @media (max-width: 800px) {
+        a:link, a:visited {
+        background-color: transparent;
+        color: #ffffff;
+        font-family: 'benton_sansbold', sans-serif;
+        font-size: 20px;
+        padding: 14px 25px;
+        margin-top: 30px;
+        text-align: left;
+        text-decoration: none;
+        width: auto;
+        display: inline-block;
+        border: 4px solid white;
+        animation: introButton 1s ease 0s 1 normal forwards, glow 3s ease 0s 1 normal forwards;
+      }
+      }
+
+      @media (max-width: 800px) {
+        a:hover, a:active {
+        color: #ffffff;
+        background-color: #294d58;
+        font-family: 'benton_sansbold', sans-serif;
+        animation: permaGlow 1s ease 0s 1 normal forwards;
+      } 
+    }
+
+      
+
+
   
       @keyframes introButton {
 	0% {
@@ -243,7 +292,7 @@ a:link, a:visited {
     .boxBack {
     position: fixed;
     z-index: -10;
-    height: 70%;
+    height: 100%;
     width: 100vw;
     margin-top: 0;
     background-color: #839da5;
