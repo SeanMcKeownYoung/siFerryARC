@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.typekit.net/sfz8cpl.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Rough Seas for Staten Islanders</title>
 
@@ -118,14 +119,7 @@ const appearOptions = {
     <style>
 /*! Fonts */
 
-@font-face {
-    font-family: 'tiempos_headlineblack';
-    src: url('tiempos_headline-black-webfont.woff2') format('woff2'),
-         url('css/tiempos_headline-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-smooth: always;
-  }
+
   
   @font-face {
     font-family: 'benton_sansregular';
@@ -151,64 +145,83 @@ const appearOptions = {
     margin: 0;
   }
   h1 {
-    font-family: 'tiempos_headlineblack', serif;
-    font-size: 56px;
+    font-family:"source-serif-4-subhead";
+    font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+    font-size: 66px;
     color: black;
     margin-left: 12px;
     margin-right: 30px;
     }
   
+    @media only screen and (max-width: 600px) {
+      h1 {
+    font-family:"source-serif-4-subhead";
+    font-weight:900;
+    font-size: 46px;
+    color: black;
+    margin-left: 12px;
+    margin-right: 30px;
+    }
+}
+
   h2 {
-    font-family: 'tiempos_headlineblack', serif;
+    font-family:"source-serif-4-subhead";
     font-size: 22px;
     color: black;
     margin-left: 12px;
   }
   h3 {
-    font-family: 'benton_sansregular', sans-serif;
+    font-family:"elza";
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
     font-size: 16px;
     line-height: 34px;
     color: black;
   }
   .label {
-    font-family: 'benton_sansregular', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase; 
-    padding-bottom: 50px;
-    color: #294d58;
+    font-family:"source-serif-4-subhead";
+    font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+    font-size: 32px;
+    padding-bottom: 40px;
     margin-left: 12px;
+    border-top: 16px solid #f68632;
+    padding-top: 10px;
   }
   b {
-    font-family: 'benton_sansbold', sans-serif;
+    font-family:"elza";
+    font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
   }
 
 
   h5 {
-    font-family: 'benton_sansregular', sans-serif;
+    font-family:"elza";
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
     font-size: 26px;
     margin-bottom: 12px;
     position: relative;
     color: rgb(78, 77, 77);
     }  
 p {
-    font-family: 'benton_sansregular', sans-serif;
-    font-size: 16px;
+  font-family:"elza";
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+    font-size: 20px;
     line-height: 34px;
     color: black;
     margin-left: 12px;
     }
 p2 {
-    font-family: 'benton_sansregular', sans-serif;
-    font-size: 16px;
+  font-family:"elza";
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+    font-size: 20px;
     line-height: 34px;
     color: rgb(255, 255, 255);
     }
 
 .subhead {
-    font-family: 'tiempos_headlineblack', serif;
+  font-family:"source-serif-4-subhead";
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
     font-size: 26px;
-    line-height: 34px;
-    color: black;
+    line-height: 44px;
+    color: rgb(35, 35, 35);
     margin-left: 12px;
     margin-bottom: 20px;
 }
@@ -224,7 +237,7 @@ p2 {
     opacity: 0;
 }
 .header {
-  background-image: linear-gradient(180deg, #827777 -180%, #ffffff 100%);
+background-color: #fff;
       width: 100%;
       margin: 0;
 }
@@ -347,13 +360,16 @@ p2 {
   
  
 .button {
+  font-family:"elza";
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
     border: none;
     color: white;
     padding: 12px 22px;
+    padding-top: 23px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 22px;
     margin: 10px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -440,7 +456,9 @@ p2 {
   }
 
  .title{
-    font-size: 24px;
+    font-size: 28px;
+    font-family:"source-serif-4-subhead";
+    font-weight:400;
     margin-bottom: 12px;
     padding-left: 40px;
     position: relative;
@@ -621,7 +639,7 @@ animation: arrow 3s ease 2s 1 normal both;
             <div class="headSea">
         <div class="mid-text">
             <div class="label">
-                <b>Interactive &nbsp; </b> | &nbsp;silive.com
+                Interactive 
             </div>   
         </div>
         <div class="entry wow animated zoomIn" data-wow-duration="5.0s">       
@@ -634,7 +652,7 @@ animation: arrow 3s ease 2s 1 normal both;
         </div>
         <div class="entry wow animated zoomIn" data-wow-duration="1.8s">   
             <p>
-                The Staten Island Ferry, a critical link to Manhattan, used to be known as one of the most reliable forms of mass transit in New York City. Yet ongoing schedule reductions have upended riders, who can no longer depend on the 24-hour ferry service. So what's to blame? The factors range from strict licensing requirements, to labor disputes, short staffing and, in some people's mind, a lack of urgency by the city. </p>
+                <b>The Staten Island Ferry,</b> a critical link to Manhattan, used to be known as one of the most reliable forms of mass transit in New York City. Yet ongoing schedule reductions have upended riders, who can no longer depend on the 24-hour ferry service. So what's to blame? The factors range from strict licensing requirements, to labor disputes, short staffing and, in some people's mind, a lack of urgency by the city. </p>
     <div>
         <svg id="arrow">
  
